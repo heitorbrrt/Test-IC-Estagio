@@ -1,0 +1,501 @@
+{
+  "info": {
+    "_postman_id": "77a9c6d9-7488-41e3-9c18-4d722b6fe27f",
+    "name": "API Operadoras ANS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51989412",
+    "_collection_link": "https://go.postman.co/collection/51989412-77a9c6d9-7488-41e3-9c18-4d722b6fe27f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET Endpoints",
+      "item": [
+        {
+          "name": "Listar Operadoras",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/operadoras?page=1&limit=10",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "operadoras"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "OK 200 - página 1",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/operadoras?page=1&limit=10",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "operadoras"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "10"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Wed, 04 Feb 2026 01:13:04 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "uvicorn"
+                },
+                {
+                  "key": "content-length",
+                  "value": "1694"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"registro_ans\": \"419761\",\n            \"cnpj\": \"19541931000125\",\n            \"uf\": \"MG\",\n            \"razao_social\": \"18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA\"\n        },\n        {\n            \"modalidade\": \"Odontologia de Grupo\",\n            \"registro_ans\": \"421545\",\n            \"cnpj\": \"22869997000153\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"2B ODONTOLOGIA OPERADORA DE PLANOS ODONTOLÓGICOS LTDA\"\n        },\n        {\n            \"modalidade\": \"Medicina de Grupo\",\n            \"registro_ans\": \"421421\",\n            \"cnpj\": \"27452545000195\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"2CARE OPERADORA DE SAÚDE LTDA.\"\n        },\n        {\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"registro_ans\": \"418030\",\n            \"cnpj\": \"13138885000131\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"A.P.S. ADMINISTRADORA DE BENEFÍCOS LTDA.\"\n        },\n        {\n            \"modalidade\": \"Autogestão\",\n            \"registro_ans\": \"314668\",\n            \"cnpj\": \"17505793000101\",\n            \"uf\": \"MG\",\n            \"razao_social\": \"ABERTTA SAÚDE - ASSOCIAÇÃO BENEFICENTE DOS EMPREGADOS DA ARCELORMITTAL NO BRASIL\"\n        },\n        {\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"registro_ans\": \"419621\",\n            \"cnpj\": \"17687511000126\",\n            \"uf\": \"RJ\",\n            \"razao_social\": \"ABPLUS ADMINISTRADORA DE BENEFÍCIOS LTDA.\"\n        },\n        {\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"registro_ans\": \"418901\",\n            \"cnpj\": \"10458298000131\",\n            \"uf\": \"RJ\",\n            \"razao_social\": \"AD SALUTE ADMINISTRADORA DE BENEFÍCIOS LTDA\"\n        },\n        {\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"registro_ans\": \"424293\",\n            \"cnpj\": \"58280182000181\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"ADC ADMINISTRADORA DE BENEFICIOS LTDA\"\n        },\n        {\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"registro_ans\": \"421553\",\n            \"cnpj\": \"28315826000169\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"ADM LIFE - ADMINISTRADORA DE BENEFÍCIOS LTDA.\"\n        },\n        {\n            \"modalidade\": \"Administradora de Benefícios\",\n            \"registro_ans\": \"416932\",\n            \"cnpj\": \"07867825000157\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"ADMSERV BENEFÍCIOS E SERVIÇOS LTDA\"\n        }\n    ],\n    \"page\": 1,\n    \"limit\": 10,\n    \"total\": 1110\n}"
+            }
+          ]
+        },
+        {
+          "name": "Listar Operadoras (busca q=amil)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/operadoras?page=1&limit=10&q=amil",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "operadoras"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                },
+                {
+                  "key": "q",
+                  "value": "amil"
+                }
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "OK 200 - busca",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/operadoras?page=1&limit=10&q=amil",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "operadoras"
+                  ],
+                  "query": [
+                    {
+                      "key": "page",
+                      "value": "1"
+                    },
+                    {
+                      "key": "limit",
+                      "value": "10"
+                    },
+                    {
+                      "key": "q",
+                      "value": "amil"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Wed, 04 Feb 2026 01:15:46 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "uvicorn"
+                },
+                {
+                  "key": "content-length",
+                  "value": "329"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"modalidade\": \"Medicina de Grupo\",\n            \"registro_ans\": \"326305\",\n            \"cnpj\": \"29309127000179\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"AMIL ASSISTÊNCIA MÉDICA INTERNACIONAL S.A.\"\n        },\n        {\n            \"modalidade\": \"Filantropia\",\n            \"registro_ans\": \"318299\",\n            \"cnpj\": \"83506030000100\",\n            \"uf\": \"SP\",\n            \"razao_social\": \"BENEFICENCIA CAMILIANA DO SUL\"\n        }\n    ],\n    \"page\": 1,\n    \"limit\": 10,\n    \"total\": 2\n}"
+            }
+          ]
+        },
+        {
+          "name": "Detalhe Operadora (por CNPJ)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/operadoras/19541931000125",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "operadoras",
+                "19541931000125"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "OK 200 - detalhe",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/operadoras/19541931000125",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "operadoras",
+                    "19541931000125"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "",
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Wed, 04 Feb 2026 01:19:59 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "uvicorn"
+                },
+                {
+                  "key": "content-length",
+                  "value": "168"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date",
+                  "domain": "",
+                  "path": ""
+                }
+              ],
+              "body": "{\n    \"modalidade\": \"Administradora de Benefícios\",\n    \"registro_ans\": \"419761\",\n    \"cnpj\": \"19541931000125\",\n    \"uf\": \"MG\",\n    \"razao_social\": \"18 DE JULHO ADMINISTRADORA DE BENEFÍCIOS LTDA\"\n}"
+            },
+            {
+              "name": "Erro - não encontrada",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/operadoras/00000000000000",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "operadoras",
+                    "00000000000000"
+                  ]
+                }
+              },
+              "status": "Not Found",
+              "code": 404,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Wed, 04 Feb 2026 01:22:20 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "uvicorn"
+                },
+                {
+                  "key": "content-length",
+                  "value": "38"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"detail\": \"Operadora não encontrada\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Despesas da operadora (por CNPJ)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/operadoras/33922160000147/despesas",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "operadoras",
+                "33922160000147",
+                "despesas"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "OK 200 - despesas",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/operadoras/33922160000147/despesas",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "operadoras",
+                    "33922160000147",
+                    "despesas"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Wed, 04 Feb 2026 01:27:05 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "uvicorn"
+                },
+                {
+                  "key": "content-length",
+                  "value": "269"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"registro_ans\": \"422053\",\n        \"ano\": 2025,\n        \"valor_despesas\": 35121990.99,\n        \"id\": 655,\n        \"trimestre\": 1\n    },\n    {\n        \"registro_ans\": \"422053\",\n        \"ano\": 2025,\n        \"valor_despesas\": 42025292.6,\n        \"id\": 1350,\n        \"trimestre\": 2\n    },\n    {\n        \"registro_ans\": \"422053\",\n        \"ano\": 2025,\n        \"valor_despesas\": 44533742.73,\n        \"id\": 2048,\n        \"trimestre\": 3\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Estatísticas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/estatisticas",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "estatisticas"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "OK 200 - estatísticas",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/estatisticas",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "estatisticas"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Wed, 04 Feb 2026 01:29:04 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "uvicorn"
+                },
+                {
+                  "key": "content-length",
+                  "value": "495"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"total_despesas\": 300089867572.62,\n    \"media_despesas\": 143377863.14984232,\n    \"top_5_operadoras\": [\n        {\n            \"razao_social\": \"BRADESCO SAÚDE S.A.\",\n            \"total\": 37106660384.16\n        },\n        {\n            \"razao_social\": \"AMIL ASSISTÊNCIA MÉDICA INTERNACIONAL S.A.\",\n            \"total\": 20608434429.89\n        },\n        {\n            \"razao_social\": \"SUL AMERICA COMPANHIA DE SEGURO SAÚDE\",\n            \"total\": 19972737723.29\n        },\n        {\n            \"razao_social\": \"UNIMED DE CIANORTE - COOPERATIVA DE TRABALHO MEDICO\",\n            \"total\": 14301807632.83\n        },\n        {\n            \"razao_social\": \"UNIMED NACIONAL - COOPERATIVA CENTRAL\",\n            \"total\": 9410094187.64\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Distribuição por UF (para gráfico)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/ufs",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "api",
+                "ufs"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "OK 200 - UFs",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/api/ufs",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "api",
+                    "ufs"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "date",
+                  "value": "Wed, 04 Feb 2026 01:30:43 GMT"
+                },
+                {
+                  "key": "server",
+                  "value": "uvicorn"
+                },
+                {
+                  "key": "content-length",
+                  "value": "879"
+                },
+                {
+                  "key": "content-type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"uf\": \"SP\",\n        \"total\": 101185408572.57\n    },\n    {\n        \"uf\": \"RJ\",\n        \"total\": 74819674733.08\n    },\n    {\n        \"uf\": \"PR\",\n        \"total\": 32193504766.71\n    },\n    {\n        \"uf\": \"MG\",\n        \"total\": 17053678183.02\n    },\n    {\n        \"uf\": \"DF\",\n        \"total\": 15760576032.73\n    },\n    {\n        \"uf\": \"CE\",\n        \"total\": 14397731698.4\n    },\n    {\n        \"uf\": \"RS\",\n        \"total\": 9846745769.63\n    },\n    {\n        \"uf\": \"SC\",\n        \"total\": 7187254843.6\n    },\n    {\n        \"uf\": \"GO\",\n        \"total\": 5008840300.9\n    },\n    {\n        \"uf\": \"ES\",\n        \"total\": 4731572776.92\n    },\n    {\n        \"uf\": \"PE\",\n        \"total\": 3029767003.26\n    },\n    {\n        \"uf\": \"MT\",\n        \"total\": 2389474313.62\n    },\n    {\n        \"uf\": \"MS\",\n        \"total\": 2145719625.36\n    },\n    {\n        \"uf\": \"PA\",\n        \"total\": 1631196010.51\n    },\n    {\n        \"uf\": \"PI\",\n        \"total\": 1337717882.43\n    },\n    {\n        \"uf\": \"PB\",\n        \"total\": 1312418791.15\n    },\n    {\n        \"uf\": \"BA\",\n        \"total\": 1177742532.15\n    },\n    {\n        \"uf\": \"AL\",\n        \"total\": 1086192853.69\n    },\n    {\n        \"uf\": \"RN\",\n        \"total\": 1054517127.6\n    },\n    {\n        \"uf\": \"SE\",\n        \"total\": 693528483.29\n    },\n    {\n        \"uf\": \"RO\",\n        \"total\": 542032211.16\n    },\n    {\n        \"uf\": \"AM\",\n        \"total\": 456668246.46\n    },\n    {\n        \"uf\": \"TO\",\n        \"total\": 293557835.52\n    },\n    {\n        \"uf\": \"MA\",\n        \"total\": 162796481.32\n    },\n    {\n        \"uf\": \"AC\",\n        \"total\": 158357640.05\n    },\n    {\n        \"uf\": \"AP\",\n        \"total\": 3677251.85\n    }\n]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": ""
+    }
+  ]
+}
